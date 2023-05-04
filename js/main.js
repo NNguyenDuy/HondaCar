@@ -37,7 +37,7 @@ changeBannerLeft.onclick = function () {
   // Chèn video vào banner
   if (numberBn == 3) {
     let video = document.createElement('video');
-    video.src = '../images/banner-video.mp4';
+    video.src = 'https://nnguyenduy.github.io/HondaCar/images/banner-video.mp4';
     video.autoplay = true;
     video.loop = true;
     video.style.objectFit = 'cover'; // hoặc '100%'
@@ -46,13 +46,10 @@ changeBannerLeft.onclick = function () {
     banner.appendChild(video);
     numberBn = 0;
   } else {
-    banner.style.backgroundImage = `url('../images/banner${numberBn}-index.avif')`;
+    banner.style.backgroundImage = `url('https://nnguyenduy.github.io/HondaCar/images/banner${numberBn}-index.avif')`;
     // Xóa video khi quay lại slide đầu tiên
     if (banner.children.length > 1) {
       banner.removeChild(banner.children[1]);
     }
   }
 };
-
-
-
