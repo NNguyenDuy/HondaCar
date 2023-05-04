@@ -53,6 +53,3 @@ changeBannerLeft.onclick = function () {
     }
   }
 };
-
-
-
