@@ -1,55 +1,35 @@
-// Header nav
-document.getElementById("verhicles-car").onclick = function () {
-  let vehicles = document.getElementById("vehicles-info").style.opacity;
-  if (vehicles == 1) {
+// Menu Navbar Respontive
+let menubar = document.querySelector('#menu-bar');
+let navbar = document.querySelector('.nav-bar');
+menubar.addEventListener('click', toggleBar);
 
-    document.getElementById("vehicles-info").style.opacity = 0;
-    document.getElementById("vehicles-info").style.visibility = "hidden";
-  }
-  else {
-    document.getElementById("vehicles-info").style.opacity = 1;
-    document.getElementById("vehicles-info").style.visibility = "visible";
+function toggleBar() {
+  navbar.classList.toggle('active');
+}
+
+// Header scroll
+window.onscroll = () => {
+  let header = document.querySelector(".header");
+  let sticky = header.offsetTop;
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
   }
 }
 
-// Main-banner
-let changeBannerLeft = document.querySelector('.swiper-arrow-icon-left');
-let changeBannerRight = document.querySelector('.swiper-arrow-icon-right');
-let banner = document.querySelector('.main-banner');
-let topBanner = document.querySelector('.top-main');
-let textBanner = document.querySelectorAll('.text-banner-content');
-let numberBn = 1;
+// Header user
+let userNav = document.querySelector(".nav-bar-account");
+document.querySelectorAll(".user-active").forEach(function (element) {
+  element.addEventListener("click", hihi);
+});
 
-changeBannerLeft.onclick = function () {
-  numberBn++;
+function hihi() {
+  userNav.style.opacity = "1";
+  userNav.style.display = "block";
+}
 
-  // Ẩn text banner sau khi đổi slide
-  if (numberBn >= 2) {
-    for (let i = 0; i < textBanner.length; i++) {
-      textBanner[i].style.display = 'none';
-    }
-  } else {
-    for (let i = 0; i < textBanner.length; i++) {
-      textBanner[i].style.display = 'block';
-    }
-  }
-
-  // Chèn video vào banner
-  if (numberBn == 3) {
-    let video = document.createElement('video');
-    video.src = 'https://nnguyenduy.github.io/HondaCar/images/banner-video.mp4';
-    video.autoplay = true;
-    video.loop = true;
-    video.style.objectFit = 'cover'; // hoặc '100%'
-    video.style.width = '100vw'; // hoặc '100%'
-    video.style.height = '100vh'; // hoặc '100%'
-    banner.appendChild(video);
-    numberBn = 0;
-  } else {
-    banner.style.backgroundImage = `url('https://nnguyenduy.github.io/HondaCar/images/banner${numberBn}-index.avif')`;
-    // Xóa video khi quay lại slide đầu tiên
-    if (banner.children.length > 1) {
-      banner.removeChild(banner.children[1]);
-    }
-  }
+document.getElementById("button-user").onclick = () => {
+  userNav.style.opacity = "0";
+  userNav.style.display = "none";
 };
