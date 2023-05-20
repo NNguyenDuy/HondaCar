@@ -49,7 +49,7 @@
   }
 
   .nav-bar-account {
-    left: 23vw;
+    left: 15vw;
   }
 
   .nav-bar-account h2 {
@@ -73,9 +73,10 @@
     right: -15rem;
   }
 
-  .st2-item-active p{
+  .st2-item-active p {
     max-width: 22.5rem;
   }
+
   .st2-item-active i {
     right: -15rem;
     top: -9rem;
@@ -85,5 +86,13 @@
   .st2-item-active {
     margin-left: -.7rem;
     padding: 1rem;
+  }
+
+  .ft-bottom {
+    flex-direction: column;
+  }
+
+  .ct-content {
+    flex-direction: column;
   }
 }

@@ -10,11 +10,15 @@ function toggleBar() {
 // Header scroll
 window.onscroll = () => {
   let header = document.querySelector(".header");
+  let activeMovePage = document.querySelector(".active-move-page");
   let sticky = header.offsetTop;
+  const divElement = document.createElement('div');
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
+    activeMovePage.classList.add("MovePage");
   } else {
     header.classList.remove("sticky");
+    activeMovePage.classList.remove("MovePage");
   }
 }
 

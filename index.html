@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="./images/logo.png" type="image/x-icon">
+  <!-- Icon My Web -->
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+
   <!-- Link font Icon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -26,10 +28,18 @@
     <!-- nav section -->
     <nav class="nav-bar">
       <a href="./index.html">Home</a>
-      <a href="#vehicles" style="cursor: pointer;" id="verhicles-car">
+      <div id="verhicles-car">
         Vehicles
-      </a>
-      <a href="./services.html">Services</a>
+        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 9L12 15L10.25 13.5M5 9L7.33333 11" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+        <div class="nav-shop-level">
+          <a href="#vehicles"><i class="fa-solid fa-circle-down"></i> Vehicles</a>
+          <a href="./vehicles.html"><i class="fa-solid fa-cart-shopping"></i> Shop</a>
+        </div>
+      </div>
+      <a href="#feature">Feature</a>
       <a href="./contact.html">Contact</a>
     </nav>
     <!-- loggin  -->
@@ -171,6 +181,43 @@
     </a>
   </div>
 
+  <div id="feature"></div>
+  <section class="section-three">
+  </section>
+
+  <footer class="footer">
+    <div class="ft-top">
+      <a class="logo" href="./index.html">Hon<span>da</span></a>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.aliqua. Ut enim ad minim.
+        <br>
+        Lorem ipsum dolor sit amet.
+      </p>
+      <form action="">
+        <input type="email" placeholder="email@example.com">
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="ft-top-icon-contact">
+        <a href="http://"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="http://"><i class="fa-brands fa-twitter"></i></a>
+        <a href="http://"><i class="fa-brands fa-instagram"></i></a>
+        <a href="http://"><i class="fa-brands fa-youtube"></i></a>
+        <a href="http://"><i class="fa-brands fa-dribbble"></i></a>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <p>
+        © 2023 Honda.<a href="#"> Made with <i class="fa-regular fa-heart"></i> by Group Two</a>.
+      </p>
+      <div>
+        Need help? Visit the
+        <a href="#">
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </footer>
+  <a href="#" class="active-move-page fa-bounce"><i class="fa-solid fa-arrow-up" style="color: #fff;"></i></a>
   <script src="./js/main.js"></script>
   <script src="https://kit.fontawesome.com/1ed0a5adb2.js" crossorigin="anonymous"></script>
 

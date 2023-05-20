@@ -17,6 +17,8 @@
   --black: #323030;
   --gray: #b0afafc1;
   --orange: #d05736;
+  --blueWhite: #47BDFF;
+  --pinkWhite: #B476E5;
 }
 
 html {
@@ -24,8 +26,4 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 7rem;
-}
-
-body {
-  height: 2200px;
 }
