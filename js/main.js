@@ -37,3 +37,41 @@ document.getElementById("button-user").onclick = () => {
   userNav.style.opacity = "0";
   userNav.style.display = "none";
 };
+
+// Choose car
+let sizeC = 2, localC = 0;
+const images = document.querySelectorAll(".st3-car img");
+document.querySelector("#choose-carR").onclick = () => {
+  if (sizeC < 5) {
+    localC += 49;
+    sizeC += 1;
+    if (sizeC != 5) {
+      images.forEach((img) => {
+        img.style.transform = `translateX(-${localC}rem)`;
+      });
+    }
+    changeSAO(sizeC, '-');
+  }
+};
+
+document.querySelector("#choose-carL").onclick = () => {
+  if (sizeC >= 2) {
+    localC -= 49;
+    sizeC -= 1;
+    images.forEach((img) => {
+      img.style.transform = `translateX(-${localC}rem)`;
+    });
+    changeSAO(sizeC, '+');
+  }
+};
+
+function changeSAO(value, operator) {
+  document.getElementById(`imgcar${value}`).style.opacity = "1";
+  document.getElementById(`imgcar${value}`).style.width = "40rem";
+  document.getElementById(`imgcar${eval(value + operator + 1)}`).style.opacity = "0.5";
+  document.getElementById(`imgcar${eval(value + operator + 1)}`).style.width = "36rem";
+}
+
+
+
+

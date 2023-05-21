@@ -446,6 +446,62 @@
 }
 
 /* section 3 */
+.st3-feature,
+.st3-choose-car {
+  margin: 2rem 4rem;
+}
+
+.st3-feature {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.st3-choose-car svg:hover {
+  background-color: rgba(215, 147, 233, 0.759);
+}
+
+.st3-choose-car svg {
+  cursor: pointer;
+  padding: 1.2rem;
+  border-radius: 50%;
+  background-color: rgba(11, 20, 36, 0.148);
+}
+
+.st3-choose-car button {
+  background-color: rgba(255, 255, 255, 0.148);
+}
+
+.st3-choose-car {
+  display: flex;
+  margin-left: 10rem;
+  font-size: 4.2rem;
+  justify-content: space-between;
+}
+
+.st3-car img:first-child {
+  margin-left: -5rem;
+}
+
+.st3-car img:not(:first-child) {
+  margin-left: 11rem;
+}
+
+.st3-car img {
+  width: 36rem;
+  opacity: 0.7;
+}
+
+.st3-car {
+  overflow: visible;
+  display: flex;
+  height: 30rem;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateX(100px);
+  margin: 4rem 0;
+}
+
 
 /* Footer */
 .ft-top {
