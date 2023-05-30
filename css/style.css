@@ -87,6 +87,13 @@
   opacity: 0;
 }
 
+#button-user {
+  position: absolute;
+  font-size: 22px;
+  right: .5vw;
+  top: 1vh;
+}
+
 #login-btn {
   background-color: rgba(238, 220, 220, 0.519);
   color: #e87472f5;
@@ -820,4 +827,259 @@
   border: .4rem solid #cdeaf8c1;
   width: 7rem;
   border-radius: 50%;
+}
+
+/* car son */
+/* xe  */
+#video {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+.banner {
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  font-size: 20px;
+}
+
+.banner .hero-vehicle-info .hero-row {
+  width: 200px;
+  position: relative;
+  left: -5rem;
+  border-bottom-right-radius: 5rem;
+  box-shadow: 0px 0px 5px 2px rgba(245, 233, 233, 0.5);
+  padding: 15px;
+  background: rgba(249, 52, 107, 0.673);
+}
+
+.banner .hero-label-text {
+  font-size: 1.3rem;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.banner .hero-label-value {
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.banner .offer-heading {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #fff;
+}
+
+.banner .bottom {
+  justify-content: space-between;
+  display: flex;
+  margin-top: 47vh;
+}
+
+.banner .highlight div {
+  color: #f6eaea;
+}
+
+.banner .highlight {
+  background: rgba(244, 219, 231, 0.413);
+  text-align: center;
+  padding: 2rem;
+  box-shadow: 0px 0px 2px 2px rgba(249, 241, 241, 0.5);
+  font-size: 2rem !important;
+  margin: 4rem;
+  border-radius: 0.5rem;
+}
+
+/* Details */
+.product-details {
+  margin-top: 22rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.col-lg-6 {
+  margin-left: 50px;
+  width: 50%;
+}
+
+.product-details__img {
+  padding: 70px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-details__img img {
+  height: 35vh;
+}
+
+.product-details__img button {
+  padding: 20px;
+}
+
+.product-details__buttons {
+  background-color: rgb(194, 239, 239);
+  padding: 10px;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.product-details__buttons button {
+  border-radius: 50%;
+}
+
+.product-details__buttons button:hover {
+  transform: scale(1.1);
+}
+
+.product-details__buttons .Button_white {
+  background-color: white;
+}
+
+.product-details__buttons .Button_gray {
+  background-color: rgba(111, 110, 110, 0.967);
+}
+
+.product-details__buttons .Button_black {
+  background-color: black;
+}
+
+.product-details__buttons .Button_red {
+  background-color: rgb(249, 47, 47);
+}
+
+.product-details__title {
+  color: var(--orange);
+  font-size: 4rem;
+  font-weight: Bold;
+}
+
+.product-details__title span {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.product-details__reveiw {
+  margin-bottom: 31px;
+}
+
+.product-details__reveiw i {
+  font-size: 18px;
+  color: rgb(228, 236, 9);
+}
+
+.product-details__reveiw span {
+  margin-left: 20px;
+  font-size: 1.5rem;
+}
+
+.product-details__content-text1 {
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 100px;
+}
+
+.product-details__content-text2 {
+  font-size: 16px;
+  margin-left: 1rem;
+}
+
+.product-details_buttons {
+  display: flex;
+}
+
+.product-details_buttons-1 .thm-btn {
+  padding: 17px 50px 17px;
+  background: black;
+  border-radius: 0.5rem;
+}
+
+.product-details_buttons-1 :hover {
+  transition: all 0.3s linear;
+  background-color: var(--red);
+}
+
+.thm-btn {
+  display: inline-block;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.product-details_buttons-2 .thm-btn {
+  padding: 17px 50px 17px;
+  background-color: var(--red);
+  border-radius: 0.5rem;
+}
+
+.product-details_buttons-2:hover {
+  transition: all 0.3s linear;
+  background-color: black;
+}
+
+.product-details_buttons-2 {
+  margin-left: 20px;
+}
+
+/* Review */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.comments-area {
+  border-top: 2px solid black;
+  padding-top: 30px;
+}
+
+.review__title {
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+}
+
+.comments-area .comment-box {
+  margin: 30px;
+  padding: 30px;
+  border-bottom: 2px solid black;
+}
+
+.comments-area .comment {
+  display: flex;
+}
+
+.author-thumb img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.review__content {
+  padding-left: 45px;
+}
+
+.review__content-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.review__content-top h2 {
+  color: #d8162d;
+}
+
+.review__content-top span {
+  color: #31096d;
+}
+
+.review__content-top i {
+  color: rgb(228, 236, 9);
+  width: 1.5rem;
+}
+
+.review__content-bottom p {
+  font-size: 20px;
+  color: black;
 }
